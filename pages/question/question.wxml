@@ -1,0 +1,44 @@
+<!-- 
+  需要解决的问题
+  1、获取用户信息，用户头像和用户名称
+  2、调用手机的图片相机使用权限，选择照片或者视频进行发布，同时设置照片视频栏
+  3、将用户输入的信息传入到index界面，进行展示
+ -->
+<view class="question" style="height:850px;background:#F5F5F5">
+  <!-- 留白区域 顶部-->
+  <view class="top" style="height:10px "></view>
+  <!-- 中间内容 -->
+  <view class="center" style="height:300px;background:#FFFFFF">
+      <!-- 中间内容顶部 -->
+    <view class="center-top" style="height:30px">
+      <view class="pic">
+        <image src="/images/1.jpg"></image>
+      </view>  
+      <view class="text">
+        <view class="name">张三</view>
+      </view>
+    </view>
+      <!-- 中间内容用户输入文字部分 -->
+    <form bindsubmit="bindFormSubmit"> 
+      <view class="center-text">
+        <textarea name="text" style="height:150px" placeholder="疑难问题，统统解决...">
+        </textarea>
+      </view>
+      <!-- 中间用于插入图片部分 -->
+      <view class="image" style="height:80px;width:80px;background:#F5F5F5">
+          <image class="camera" src="/images/camera.png">
+           
+          </image>
+          <view class="choose">图片/视频</view>
+      </view>
+        <!-- 发表按钮 -->
+      <button class="button" size="mini"  form-type="submit" type="primary"> 发表 </button>
+    </form>
+    </view>
+  </view>
+
+
+
+
+
+

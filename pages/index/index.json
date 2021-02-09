@@ -1,0 +1,10 @@
+{
+  "usingComponents": 
+  {
+    
+  },
+  "navigationBarBackgroundColor": "#87CEFA",
+  "navigationBarTitleText": "校园答疑",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,57 @@
+<!-- 
+  需要解决的问题
+  1、立即搜索可以搜索到关键字显示出来响应的东西 执行'a'方法
+  4、@@@@在展示界面设置下拉触底事件
+  5、点赞，转发，评论的功能
+  6、导航栏的样式px改成rpx
+
+ -->
+<import src="../../template/template.wxml"/>
+<view class="question">
+  <!-- 留白空间 -->
+  <view class="space" style="height:22rpx "></view>
+  <!-- 立即搜索 -->
+  <view class="search">
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+        <!-- 搜索框 -->
+          <view class="weui-search-bar__box">
+              <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+              <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容"/>
+          </view>
+        </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+        <view class="weui-search-bar__cancel-btn" bindtap='a'>搜索</view>
+    </view>
+  </view>
+  <!-- 留白空间 -->
+  <view class="space" style="height:22rpx "></view>
+  <!-- 遇到问题？？立即提问 -->
+  <view class="ask">
+   
+    <navigator  url="/pages/question/question" >
+      <text class="ask-text"space="ensp">遇到问题？？                立即提问</text>
+    </navigator>
+  </view>
+  <!-- 展示界面 -->
+  <view class="show">
+    <!-- 留白空间 -->
+    <view class="space" style="height:22rpx "></view>
+    <!-- 顶部导航 -->
+    <view class="navbar"> 
+      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text> 
+    </view> 
+    <!-- 最新 --> 
+    <view hidden="{{currentTab!==0}}"> 
+      <template is="content" data="{{listarr}}"/>
+    </view>  
+    <!-- 最热 -->
+    <view hidden="{{currentTab!==1}}"> 
+      <template is="content" data="{{listarr}}"/>
+    </view>  
+    <!-- 精华 -->
+    <view hidden="{{currentTab!==2}}"> 
+      <template is="content" data="{{listarr}}"/>
+    </view> 
+  </view>
+</view>

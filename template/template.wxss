@@ -1,0 +1,77 @@
+
+ .contain{
+  padding: 30rpx;
+  height: 100%;
+
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+/* top */
+}
+.top{
+  display: flex;
+  height: 100rpx;
+
+}
+.pic{
+  flex: 2;
+  margin-right: 30rpx;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+  
+}
+.text{
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.time{
+  font-size: 30rpx;
+  color: rgb(102, 98, 98);
+}
+
+/* center */
+
+
+.writing{
+  margin-top: 10rpx;
+}
+/* bottom */
+.commen{
+  display: flex;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.commen1{
+  margin-left: 20px;
+
+  width:25px;height:25px;
+
+}
+.commen2{
+  margin-left: 20px;
+  width:25px;height:25px;
+
+}
+.commen3{
+  margin-left: 20px;
+  width:25px;height:25px;
+
+}
+.commen1 .pic1{
+  width: 100%;
+  height: 100%;
+ 
+}
+.commen2 .pic2{
+  width: 100%;
+  height: 100%;
+  
+}
+.commen3 .pic3{
+  width: 100%;
+  height: 100%;
+
+}

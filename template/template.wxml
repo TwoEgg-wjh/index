@@ -1,0 +1,35 @@
+<template name="content">
+    
+  <view class="contain" wx:for="{{listarr}}" >
+  <!-- top -->
+  <view class="top" style="width:100%;height:100rpx;">
+    <view class="pic">
+      <image src="{{item.url}}"></image>
+    </view>  
+    <view class="text">
+      <view class="name">{{item.name}}</view>
+      <view class="time">{{item.time}}</view>
+    </view>
+  </view>
+
+  <!-- center -->
+  <view class="center" style="width:100%;">
+   <view class="writing">
+        {{item.writing}}
+   </view>
+   </view>
+   <!-- bottom -->
+   <view class="commen">
+    <view class="commen1" >
+     <image class="pic1" src="/images/like.png" bindtap="click"></image> 
+   </view>
+   <view class="commen2"  >
+      <image class="pic2" src="/images/send.png" ></image>     
+   </view>
+   <view class="commen3" >
+     <image class="pic3" src="/images/commen.png" ></image> 
+   </view>
+   </view>
+   
+  </view>
+</template>

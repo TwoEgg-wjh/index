@@ -1,0 +1,166 @@
+@import "../../template/template.wxss";
+
+.question{
+  width: 750rpx;
+  height: 300rpx;
+  background-color:	#F5F5F5;
+}
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color:white;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09BB07;
+  white-space: nowrap;
+}
+
+.ask{
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  
+}
+
+page{ 
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+ } 
+ .navbar{ 
+  flex: none; 
+  display: flex; 
+  background: #fff; 
+ } 
+ .navbar .item{ 
+  position: relative; 
+  flex: auto; 
+  text-align: center; 
+  line-height: 80rpx; 
+ } 
+ .navbar .item.active{ 
+  color:#87CEFA; 
+ } 
+ .navbar .item.active:after{ 
+  content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 4rpx; 
+  background: #87CEFA; 
+ } 
+
+
+ .contain{
+  padding: 20rpx;
+  height: 100%;
+
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+/* top */
+}
+.top{
+  display: flex;
+  height: 100rpx;
+
+}
+.pic{
+  flex: 1.5;
+  margin-right: 30rpx;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.text{
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.time{
+  font-size: 30rpx;
+  color: rgb(102, 98, 98);
+}
+
+/* center */
+
+
+.writing{
+  margin-top: 10rpx;
+}
+/* bottom */
+.commen{
+  display: flex;
+  margin-left: 150rpx;
+  margin-top: 10rpx;
+}
+.commen1{
+  margin-left: 250rpx;
+
+  width:60rpx;height:60rpx;
+
+}
+.commen2{
+  margin-left:50rpx;
+  width:60rpx;height:60rpx;
+
+}
+.commen3{
+  margin-left: 50rpx;
+  width:60rpx;height:60rpx;
+
+}
+.commen1 .pic1{
+  width: 100%;
+  height: 100%;
+ 
+}
+.commen2 .pic2{
+  width: 100%;
+  height: 100%;
+  
+}
+.commen3 .pic3{
+  width: 100%;
+  height: 100%;
+
+}
